@@ -1,0 +1,189 @@
+Protein structure slides
+
+First, longer, version:
+
+1. All proteins consist of polypeptide chains; although sometimes confusingly "protein" can refer to a structure consisiting of one or more polypeptide chains
+TRANSFERED TO SHORTER VERSION 2
+
+e.g. the protein XXXXX is made up of XXXX polypeptid chains encoded by the XXXX gene
+
+
+
+2. One way of viewing protein function (which is what we're interested in if we want to 'understand' a system i.e. build usefully predictive/experimentally supported models) is to think of it in terms of the strength, specificity, and whether or not they occur in physiological or disease states, of the interactions made by the protein with other entities e.g. light, electrons, molecules, membranes
+TRANSFERED TO SHORTER VERSION 2
+
+
+3. Interactions take place in 4D (time plus 3D); different entities interact with each other  with different kinetics and strength and hence specificty, depending on the 3D structure, and how this changes with time
+TRANSFERED TO SHORTER VERSION 2
+
+Thus, experiments providing information on 3D structures, and how these change with time, of proteins, and proteins interacting with other entities, can provide important insights into our understanding of biological systems (i.e. our ability to build usefully predictive models of them.)
+
+Key experimental methods to give this kind of info are:
+
+- X-ray crystalography
+- NMR
+- Electron microspy
+- SAXS
+
+and others - none of which I'm any kind of an expert on!
+
+If you need to work with data obtained by these methods, you'll clearly be better placed to appropriately interpret the results from them, the better you understand how they work, and common sources of error associated with them, and thus the more confident and assured you will be interpreting this data - some of the trainers have lots of experience with these kinds of issues, if they're important for you, talk with them about these things! Some of you use these methods too, so you can also help each other with these kinds of quesitnos and issues
+
+
+4. PDB files describe models of the 3D structure of biological molecules (mostly proteins) that provide (hopefully) good fits/explanations to the data obtained from experimental analyses, mostly of the kinds described above. Thus, they describe the location in 3D of atoms within a molecule, together with a bunch of other ?metadata? providing additional information about the molecules (e.g. organism encoding the protein gene, info about the experiment used to build the model etc.)
+TRANSFERED TO SHORTER VERSION 2
+
+
+5. Polypeptides can be modelled as planar, able to rotate between monomers around two bonds; even though the volume occupied by the monomers makes some of these angles difficult/rare to be encounered, there are many many many  (even if there were just two posible ngles taken by each bond, in a polypeptide with 100 bonds to rotate round, there would be 2**100 possible confirormations i.e. lots, and, importantly, too many for us to try all possible ones to (if that were possible) identify the 'best' one of them (2**100 is greater than 10**80, which is one estimate of the number of atoms in the universe...), so it's a hard problem to predict 'well' (accurately) 3D structure from sequence for any 'long' protein
+TRANSFERED TO SHORTER VERSION 2
+
+
+6. a general rule of thermodynamics is that the system will, once in equilibrium, be in a state where as many high-energy bonds are formed as possible, and some general rules have been observed for 
+TRANSFERED TO SHORTER VERSION 2
+
+- ramachandran plot (preferred bond-angles between peptides)
+- secondary structure elements (H-bonding between CO/NH backbone groups)
+- in aqueous solvent, sidechains not exposed to surface are 'hydrophobic' (although as we'll see later from Zsuzsa that there is no one definitive hydrophobicity scale, so it's not as simple/useful as it sounds..., and there are plenty of exceptions e.g. polar residues coordinating metal ions in core of proteins)
+
+show common ways of representing helices and sheets
+
+
+6a. remember proteins are DYNAMIC e.g. see this NMR 'video'
+TRANSFERED TO SHORTER VERSION 2
+
+
+7. xalography, EM, (NMR?)- based structure models depend on measuring frequntly-observed and thus stable/metastable and thus low-energy/'meta'-low energy states - thus, in general, if a model shows two proteins located 'on average' in promxibity to each other such that they correspond to bond (e.g. H-bond) distances, we conclude that in this confirmation the proteins interact with each other
+DELIBERATELY LEFT OUT OF SHORTER VERSION 1
+
+i.e. protein structures are modelled using average/ensemble properties of many protein molecules
+
+- averaged over many proteins in a crystal
+- averaged over many proteins in solution in a strong magnetic field
+- single particles analysed in EM
+
+so if on average two proteins in the experimental system interact in 'the same way' then they show up as interacting (i.e. located closely to each other such that their distance apart corresponds to that of some kind of cheimcal bond
+
+
+
+8. Common interactions are globular-globular e.g. xxxxx, these tend to be strong i.e. once formed they are hard to disrupt, e.g.
+Others e.g. peptide/motif- globluar involve on average fewer bonds, and are less strong, so are easier to revert
+TRANSFERED TO SHORTER VERSION 2
+
+
+9. Identifying resiues/regions of a protein that seem likely to contribute lots of energy to an interaction, is useful for understand (i.e. building useful predictive models) of the system e.g. observing this, one could mutate this resiue in vitro/vivo and look for changes/loss in binding properties
+TRANSFERED TO SHORTER VERSION 2
+
+
+10. Thus, it can be useful to examine and visualise PDB files, Chimera is a good tool for this
+TRANSFERED TO SHORTER VERSION 2
+
+Now a demo where Scooter will show you how to:
+
+- load structures into Chimera
+- change colour and representation and orientation and zoom level of structures
+- show different polypeptide chains differently so the PPIs can be easily seen
+- show backbone and surface at the same time, with transparent surface
+- indicate H-bonds between the peptide chains
+
+
+11. Maybe ask them to look at some structures and predict residues likely that, if changed (and then changed to what?) they would greatly reduce the energy of the interaction - maybe with a paper that shows an answer to this question, probably easiest with motifs
+
+
+
+
+
+Second (shorter) version:
+
+## Introduction
+
+I'm assuming that you've all already in your research/studies addressed/learned about the following ideas/issues/concepts:
+
+1. all proteins consist of one (or more) polypeptide chains
+
+If time show single-chain proteins, multi-chain proteins
+
+2. proteins may have post-translationally modified residues, and also other components in them in addition to polypeptides (show phospho/ubiqutin/haeme)
+
+If time show pictures
+
+3. Peptide units are planar, there are two bonds between them around which they can rotate, even despite the volume/chemistry of the groups involved making some angles less likely, there are many many different chain orientations possible, too many to iterate between all of them (not least as the angles are continuous, not discrete), this makes accurate prediction of protein 3D structure from primary sequence extremely difficult
+
+Some commonly-observed patterns (i.e. frequently observed properties) of protein structures:
+
+- secondary-structure elements i.e. alpha-helices and beta sheets
+- ramacandran plots showing frequently-occurring bond angles
+- proteins in aqueous solvents with side-chains not exposed to the surface 'predominantly hydrophobic'; low-energy state of polar surface sidechains forming lots of hydrogen/polar bonds with water, and hydrophobic sidechains with non-polar interactions iwith each other in the core, is a major driver of protein structure specification
+
+3. Proteins are dynamic, not static, and different regions of a given protein are differently dynamic
+
+Show NMR video
+
+4. PDB files describe models of the 3D structure of biological macromolecules, in most cases the locations of atoms of polypeptide chains
+
+Show an example of coordinates in a PDB file
+
+5. Based on the distances observed between atoms in the PDB file, non-covalent bonds are inferred between atoms that are distances apart (and of appropriate chemistry), for example between backbone NH/COs, and between non-covalently-interacting proteins i.e. PPIs
+
+
+These are fundamental ideas associated with how we think about protein structure, so if you find any of them confusing, or disagree with any of them, it would be good to address those issues now; time is too short, if there are major issues, to deal with them now, but for trainers and for you it's useful to check and see if we're on the same page so far.
+
+Rather than asking you for questions in front of the whole room, which can be intimidating, please instead talk with your neighbour/partner, and see whether you agree with the statements I've made on the different slides, or if you can think of exceptions/problems with what I've said, and try and address/answer these issues together, by asking trainers, or reading e.g. wikipedia.
+
+This has the chance that, in parallel, we can address any specific issues you may have, which are tyipcally different between different people, which can make it somewhat inefficient to deal with them in series by asking questions in front of the whole group.
+
+## Why is thinking about protein structure relevant for working with PPIs
+
+### Protein function in terms of strength and specificity of interactions (particularly PPIs)
+
+One way of viewing protein function (which is what we're interested in if we want to 'understand' a system i.e. build usefully predictive/experimentally supported models) is to think of it in terms of the strength, specificity, and whether or not they occur in physiological or disease states, of the interactions made by the protein with other entities e.g. light, electrons, molecules, membranes
+
+
+### Interactions happen in 4D
+
+Interactions take place in 4D (time plus 3D); different 3D structures interact differently with each other with different kinetics and strength and hence specificty, (other things are important too, of course, not least chemistry)
+
+Thus, looking at the structure of interacting moldeucles, and understanding how this changes in time, can provide valuable insights into protein function/PPIs (i.e. improve predictive accuracy of models)
+
+
+### Globular-globular interactions
+
+Common interactions are globular-globular e.g. xxxxx, these tend to be strong i.e. once formed they are hard to disrupt, e.g.
+
+
+### Peptide-globular interactions
+
+Others e.g. peptide/motif- globluar involve on average fewer bonds, and are less strong, so are easier to revert
+
+
+### Looking at/analysing structures can identify  (important for understanding diseases, infections, etc.)
+
+Identifying resiues/regions of a protein that seem likely to contribute lots of energy to an interaction, is useful for understand (i.e. building useful predictive models) of the system e.g. observing this, one could mutate this resiue in vitro/vivo and look for changes/loss in binding properties
+
+
+### Thus, it can be useful to examine and visualise PDB files, Chimera is a good tool for this
+
+Now a demo where Scooter will show you how to:
+
+- load structures into Chimera
+- change colour and representation and orientation and zoom level of structures
+- show different polypeptide chains differently so the PPIs can be easily seen
+- show backbone and surface at the same time, with transparent surface
+- indicate H-bonds between the peptide chains
+
+Given several
+
+### Further exercises based on introduction slides
+
+Use the PDB website to identify and download locally PDB files containing:
+
+- a single polypeptide chain
+- multiple polypeptide chains
+- at least one phosphorylated aminoacid residue
+- only alpha-helices, no beta strands
+- only beta-strands, no alpha-helices
+
+Create figures that illustrate these different things nicely.
+
+
+### Show some of the "ricardo" tools from EBI where we can automatically analsye the energy of the interactions
+ONLY IF I'VE TIME!
