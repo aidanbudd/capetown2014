@@ -2,7 +2,7 @@
 ## 28 September - 3 October 2014, UCT, Cape Town, South Africa
 ## Aidan Budd, EMBL, Heidelberg
 
-### Introduction to the course, Monday 29th September 2014
+### [Introduction to the course](./introToTheCourseBuddCT2014.html), Monday 29th September 2014
 
 ### [Introduction to Bioinformatics](./introductionToBioinformaticsBuddCT2014.html), Monday 29th September 2014
 
