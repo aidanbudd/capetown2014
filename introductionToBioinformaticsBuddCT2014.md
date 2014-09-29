@@ -4,6 +4,8 @@
 #### 28 September - 3 October 2014, UCT, Cape Town, South Africa
 #### Aidan Budd, EMBL, Heidelberg
 
+## [Presentation](./presentations/introBioinformaticsBuddCTSept2014.pdf)
+
 ## Uniprot
 
 Human Beta-2 adrenergic receptor:
@@ -23,3 +25,16 @@ UniProt manual:
 
 - [Link to manual on UniProt site](http://www.uniprot.org/help/?fil=section:manual)
 - [Link to local version of the front manual page](./staticVersionsOfRemotePages/uniprot_section_manual_in_Help.html)
+
+## Protein modules
+
+- PFAM page showing protein architectures involving the Kinase domain:
+    - [Link to this page on the PFAM website](http://pfam.xfam.org/family/PF00069#tabview=tab1)
+    - [Local version of the page](./staticVersionsOfRemotePages/Pfam_Family_Pkinase_PF00069_.html)
+
+Use UniProt, or other resources you discover or already know about, to identify predicted/directly-assayed PPI-mediating protein modules in:
+
+- some of your own proteins of interest
+- if you don't have specific proteins of interest try:
+    - src
+    - p53
